@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+.card-header {
+    text-align: left;
+}
+
+
+ul {
+    list-style-type: square;
+    display: none;
+}
+
+#results, #totals{
+    display: none;
+}
+
+#wrong {
+    color: darkred;
+}
+

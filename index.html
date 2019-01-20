@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X Trivia Game</title>
+
+    <!-- Link to CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Link to Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to JavaScript -->
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center" id="main-header">X</h1>
+    <h2 class="text-center" id="sub-header">Trivia Game</h2>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <!-- Game Card -->
+      <div class="col-lg-12">
+        <div class="card">
+            <h2 class="card-header">Game</h2>
+            <br>
+            <div class="card-body">
+            <div id="pregame">
+                <p id="rules">This is a trivia game themed around X! There are currently <span class="questions"></span> questions available, but we often add more!<br>
+                    Please input a number between 1 and <span class="questions"></span>. The number you enter will be the number of questions in your<br>
+                    trivia quiz. Each question is multiple choice, and you will have 9 seconds to answer each. Have fun!<br>
+                    Press "Begin" when you're ready to start.
+                </p>
+                <input type="text" id="num" name="num"/>
+                <button id="begin" class = "btn btn-dark">Begin!</button>
+                <div id="wrong"></div>
+            </div>
+            <br><br>
+            <div id="question-area">
+                <h3 id="timer"></h3>
+                <div id="question">
+                </div><br>
+                <ul id="answer-choices">
+                    <li id="ans0"></li>
+                    <li id="ans1"></li>
+                    <li id="ans2"></li>
+                    <li id="ans3"></li>                
+                </ul>
+            </div><br>
+            <div id="results">
+                <h4 id="game-over">Game over! Here are this game's results:</h4>
+                <h5 id="num-correct"></h5>
+                <h5 id="num-incorrect"></h5>
+                <h5 id="ratio"></h5>
+            </div>
+            <button id="reset" class = "btn btn-dark">Reset Game</button>
+            <br><br><br>
+            <div id="totals">
+                <h4 id="g-o-totals">Here are your all-time results:</h4>
+                <h5 id="total-correct"></h5>
+                <h5 id="total-incorrect"></h5>
+                <h5 id="total-ratio"></h5>
+                <button id="reset-total" class = "btn btn-dark">Delete All-Time Data</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
